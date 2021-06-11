@@ -1,3 +1,3 @@
-const participants = [];
+let participants = [];
 
 export default participants;
