@@ -77,7 +77,6 @@ function processarMensagens(resposta) {
 
 function processarParticipantes(resposta) {
   participantes = resposta.data;
-  console.log({participantes});
 
   const todos = { name: "Todos" };
   participantes.unshift(todos);
