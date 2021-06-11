@@ -19,7 +19,7 @@ const addMessage = (req, res) => {
 	}
 
 	message.from = user;
-	message.time = dayjs().format('HH:MM:ss');
+	message.time = dayjs().format('HH:mm:ss');
 
 	messages.push(message);
 

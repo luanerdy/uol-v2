@@ -18,12 +18,12 @@ function registrarParticipante() {
 }
 
 function entrarNaSala() {
-  // carregarMensagens();
+  carregarMensagens();
   carregarParticipantes();
   
-  // agendarAtualizacaoDeMensagens();
-  // agendarAtualizacaoDeParticipantes();
-  // agendarAtualizacaoDeStatus();
+  agendarAtualizacaoDeMensagens();
+  agendarAtualizacaoDeParticipantes();
+  agendarAtualizacaoDeStatus();
 }
 
 function carregarMensagens() {

@@ -6,5 +6,5 @@ routes(app);
 
 app.listen(4000);
 
-// setInterval(checkUsers, 15000);
+setInterval(checkUsers, 15000);
 console.log("server rodando");

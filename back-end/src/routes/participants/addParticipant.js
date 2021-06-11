@@ -20,7 +20,7 @@ const addParticipant = (req, res) => {
 		to: 'Todos',
 		text: 'entra na sala...',
 		type: 'status',
-		time: dayjs().format('HH:MM:ss'),
+		time: dayjs().format('HH:mm:ss'),
 	};
 
 	participants.push(participant);

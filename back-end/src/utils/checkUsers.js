@@ -1,6 +1,6 @@
 import participants from '../data/participants.js';
 
-let checkUsers = () => {
+function checkUsers() {
 	participants = participants.filter(
 		(p) => Date.now() - p.lastStatus <= 10000
 	);
