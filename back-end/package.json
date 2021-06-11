@@ -1,5 +1,6 @@
 {
   "name": "back-end",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dayjs": "^1.10.5",
     "express": "^4.17.1"
   }
 }
