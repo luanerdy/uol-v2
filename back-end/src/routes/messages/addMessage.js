@@ -3,24 +3,23 @@ import messages from '../../data/messages.js';
 import dayjs from 'dayjs';
 
 const addMessage = (req, res) => {
-    const user = req.get('user');
-	const participant = participants.find((p) => p.name === user);
-
+	const user = req.get('user');
 	const message = req.body;
 	const validTypes = ['message', 'private_message'];
-
-	if (
+	const participant = participants.find((p) => p.name === user);
+	const validations =
 		!message.to ||
 		!message.text ||
 		!validTypes.includes(message.type) ||
-		!participant
-	) {
+		!participant;
+
+	if (validations) {
 		res.sendStatus(400);
 		return;
 	}
 
-    message.from = user;
-    message.time = dayjs().format('HH:MM:ss')
+	message.from = user;
+	message.time = dayjs().format('HH:MM:ss');
 
 	messages.push(message);
 
