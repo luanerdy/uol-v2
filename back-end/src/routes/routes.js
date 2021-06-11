@@ -1,11 +1,11 @@
-import participants from "./participants/participantsRoute.js";
-import messages from "./messages/messagesRoute.js";
-import status from "./status/statusRoute.js";
+import participantsRoute from "./participants/participantsRoute.js";
+import messagesRoute from "./messages/messagesRoute.js";
+import statusRoute from "./status/statusRoute.js";
 
 const routes = (app) => {
-    participants(app);
-    messages(app);
-    status(app);
+    participantsRoute(app);
+    messagesRoute(app);
+    statusRoute(app);
 };
 
 export default routes;
