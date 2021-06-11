@@ -18,12 +18,12 @@ function registrarParticipante() {
 }
 
 function entrarNaSala() {
-  carregarMensagens();
+  // carregarMensagens();
   carregarParticipantes();
   
-  agendarAtualizacaoDeMensagens();
-  agendarAtualizacaoDeParticipantes();
-  agendarAtualizacaoDeStatus();
+  // agendarAtualizacaoDeMensagens();
+  // agendarAtualizacaoDeParticipantes();
+  // agendarAtualizacaoDeStatus();
 }
 
 function carregarMensagens() {
@@ -77,6 +77,7 @@ function processarMensagens(resposta) {
 
 function processarParticipantes(resposta) {
   participantes = resposta.data;
+  console.log({participantes});
 
   const todos = { name: "Todos" };
   participantes.unshift(todos);

@@ -7,6 +7,7 @@ const addParticipant = (req, res) => {
 
 	if (!req.body.name || nameInUse) {
 		res.sendStatus(400);
+        return;
 	}
 
 	const participant = {
